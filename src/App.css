@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+#root {
+  text-align: center;
+  background-image: url('https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+/*Landing Page*/
+
+.landingPage {
+  background-color: var(--landing-bg-color);
+  height: 95vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+
+  color: white;
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 83vh;
+
+}
+
+.mainInfo h1 {
+  font-size: 72px;
+  font-weight: 900;
+
+  margin: 30px 0px 40px;
+}
+
+.mainInfo h4 {
+  font-weight: 400;
+}
+
+.infoContainer {
+  text-transform: uppercase;
+  font-size: 21px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  letter-spacing: 1px;
+
+}
+
+.infoContainer svg {
+  height: 24px;
+}
+
+.mainInfo button {
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+
+  display: block;
+  height: 48px;
+  width: 200px;
+
+  cursor: pointer;
+}
+
+.mainInfo button:hover {
+  background-color: rgb(15, 15, 15);
+}
+
+.chevronContainer {
+  height: 10vh;
+}
+
+.chevronContainer svg {
+  height: 48px;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 320px) {
+  .mainInfo h1 {
+    font-size: 42px;
+    font-weight: 900;
+
+    margin: 30px 0px 40px;
+  }
+}
+
+/*Job Description Section*/
+
+.jobDescribtion {
+  min-height: 200vh;
+  text-align: start;
+  background-color: rgb(241, 240, 240);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  line-height: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mainDescription {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 20px;
+
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 32px;
+}
+
+.mainDescription p {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.mainDescription h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.mainDescription ul li {
+  padding-left: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+/*Info Block*/
+
+table {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 48px;
+  width: 100%;
+
+  flex-wrap: wrap;
+}
+
+
+table tr:first-of-type th {
+  font-weight: 600;
+}
+
+
+table tr {
+  display: flex;
+  flex-direction: column;
+
+}
+
+table tr th {
+  text-align: start;
+  font-weight: 400;
+
+}
+
+.tableContainer {
+  background-color: rgba(1, 1, 1, 0.03);
+  border-radius: 5px;
+  min-width: 850px;
+}
+
+@media screen and (max-width: 768px) {
+  .tableContainer {
+    min-width: 550px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tableContainer {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tableContainer {
+    min-width: 300px;
+  }
+}
+
+/*Contact expert block*/
+
+.contactExpert {
+  display: flex;
+  align-items: center;
+
+  gap: 34px;
+  padding: 72px 72px 168px 72px;
+  line-height: 8px;
+}
+
+.contactExpert img {
+  border-radius: 50%;
+  height: 170px;
+}
+
+.contactExpertInfo h2 {
+  padding-top: 9px;
+}
+
+
+.contactExpertInfo h4 {
+  font-weight: 400;
+
+}
+
+@media screen and (max-width: 576px) {
+  .contactExpert {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*Job Opportunities*/
+
+.jobOpportunities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1228px;
+  width: 90%;
+}
+
+.jobOpportunities h1 {
+  font-size: 36px;
+}
+
+.jobOpportunities ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.jobOpportunities li {
+  width: 100%;
+  list-style-type: none;
+  user-select: none;
+}
+
+.jobOpportunities li:hover {
+  background-color: rgba(1, 1, 1, 0.03);
+  cursor: pointer;
+}
+
+.application {
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 500;
+  word-spacing: 2px;
+  letter-spacing: 0.04px;
+
+  padding: 20px;
+}
+
+.jobName {
+  font-size: 18px;
+}
+
+.application span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.jobOpportunities ul li:nth-child(1),
+.jobOpportunities ul li:nth-child(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.applicationInfo {
+  text-align: end;
+}
+
+.applicationInfo span {
+  padding-right: 6px;
+}
+
+.application svg {
+  height: 16px;
+  padding-left: 5px;
+}
+
+/*---button---*/
+
+.jobOpportunities button {
+  display: block;
+  height: 52px;
+  width: 228px;
+
+  background-color: black;
+  border: none;
+  color: #fff;
+  border-radius: 16px;
+
+  font-weight: 700;
+  cursor: pointer;
+
+  margin-bottom: 72px;
+
+}
+
+.jobOpportunities button:hover svg {
+  transform: translate(5px, 0px);
+}
+
+.jobOpportunities button:hover {
+  background-color: rgba(0, 0, 0, 0.911);
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+
+.jobOpportunities button svg {
+  height: 16px;
+  transform: translate(0px, 0px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.flexItems {
+  display: flex;
+  margin-left: 30%;
+  align-items: center;
+
+  gap: 10px;
+}

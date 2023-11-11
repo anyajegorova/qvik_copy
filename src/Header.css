@@ -1,0 +1,61 @@
+header {
+    background-color: var(--landing-bg-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+svg {
+    height: 28px;
+    cursor: pointer;
+}
+
+.menuContainer {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 12px;
+    padding-left: 20px;
+    width: calc(100vw/3);
+}
+
+.careerMenu {
+    cursor: pointer;
+}
+
+.menuContainer h5 {
+    font-weight: lighter;
+}
+
+.quickImageContainer img {
+    max-height: 64px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+
+}
+
+.quickImageContainer {
+    width: calc(100vw/3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shareIconContainer {
+    padding-right: 20px;
+    width: calc(100vw/3);
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 320px) {
+    .careerMenu {
+        display: none;
+    }
+
+}
