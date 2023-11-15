@@ -10,6 +10,9 @@ function App() {
   const submitForm = () => {
     e.preventDefault();
   }
+
+
+
   return (
     <>
       <Header />
@@ -111,16 +114,21 @@ function App() {
         </div>
         <div className='tableContainer'>
           <table>
-            <tr>
-              <th>Department</th>
-              <th>Locations</th>
-              <th>Remote status</th>
-            </tr>
-            <tr>
-              <th>Experts</th>
-              <th>Stockholm</th>
-              <th>Hybrid remote</th>
-            </tr>
+            <thead>
+              <tr>
+                <th>Department</th>
+                <th>Locations</th>
+                <th>Remote status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Experts</th>
+                <th>Stockholm</th>
+                <th>Hybrid remote</th>
+              </tr>
+            </tbody>
+
           </table>
         </div>
 
@@ -195,24 +203,44 @@ function App() {
             </button>
           </div>
           <div className='inputContainer'>
-            <input type='text' placeholder='Jane' />
-            <input type='text' placeholder='Doe' />
+            <div className='inputLabelContainer'>
+              <label>First name</label>
+              <input type='text' placeholder='Jane' />
+            </div>
+            <div className='inputLabelContainer'>
+              <label>Last name</label>
+              <input type='text' placeholder='Doe' />
+            </div>
+
           </div>
           <div className='inputContainer'>
-            <input placeholder='Email' />
-            <input type='number' placeholder='+46 70 123 45 67' />
+            <div className='inputLabelContainer'>
+              <label>Email *</label>
+              <input placeholder='Email' />
+            </div>
+            <div className='inputLabelContainer'>
+              <label>Phone</label>
+              <input placeholder='+46 70 123 45 67' />
+            </div>
+
           </div>
           <label>Upload CV</label>
-          <input type='file' className='fileDrop' />
+          <div id='fileDrop'>
+            <input type='file' className='fileDrop' />
+          </div>
+
           <label>Additional files</label>
-          <input type='file' className='fileDrop' />
+          <div id='fileDrop'>
+            <input type='file' className='fileDrop' />
+          </div>
+
           <label>Cover letter</label>
-          <input placeholder='Write your letter...' />
+          <textarea id='coverLetter' placeholder='Write your letter...' />
           <div>
-            <div>
+
+            <div className='checkboxContainer'>
               <input type='checkbox' value='privacyPolicy' />
-              <label for='privacyPolicy'>By submitting this application, I agree that I have read the <a>Privacy Policy </a>
-                and confirm that QVIK AB store my personal details to be able to process my job
+              <label for='privacyPolicy' >By submitting this application, I agree that I have read the <a>Privacy Policy</a> and confirm that QVIK AB store my personal details to be able to process my job
                 application.</label>
             </div>
             <input type='submit' value="Submit application" />
@@ -220,7 +248,8 @@ function App() {
 
         </form>
       </section>
-      <section>
+
+      <section className='footer'>
 
       </section>
     </>
