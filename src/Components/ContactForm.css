@@ -1,0 +1,249 @@
+.contactForm {
+    background-color: rgb(15, 15, 15);
+    height: 1600px;
+  
+    color: white;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 680px;
+    font-family: var(--main-font-style);
+  }
+  
+  
+  /*---------inputs text email file------------*/
+  form h3 {
+    font-size: 28px;
+    font-family: var(--main-font-style);
+    font-weight: 500;
+  }
+  
+  .inputContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  form input {
+    background-color: var(--light-bg-color);
+    border-radius: 12px;
+    height: 68px;
+  
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: var(--main-font-style);
+    border: none;
+  }
+  
+  .contactForm h1 {
+    font-size: 72px;
+  }
+  
+  form label {
+    text-align: start;
+    padding: 18px;
+    font-size: 21px;
+  
+  }
+  
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 16px;
+  }
+  
+  .inputLabelContainer {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+  }
+  
+  form label {
+    padding-left: 6px;
+  }
+  
+  #coverLetter {
+    display: flex;
+    height: 80px;
+    justify-content: start;
+  
+    border-radius: 12px;
+    border: none;
+    background-color: var(--light-bg-color);
+  
+    font-family: var(--main-font-style);
+    padding: 24px;
+  }
+  
+  .fileDrop {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  
+    max-height: 32px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+  
+    color: rgba(0, 0, 0, 0.781);
+    font-size: 18px;
+    border: 3px dashed rgba(0, 0, 0, 0.089);
+  }
+  
+  #fileDrop {
+    display: flex;
+    background-color: var(--light-bg-color);
+    border-radius: 12px;
+  
+    cursor: pointer;
+  }
+  
+  input:hover,
+  textarea:hover {
+    transform: translate(0px, -1px);
+  }
+  
+  /* ----Input of type file default styling unset----*/
+  
+  input[type=file]::file-selector-button {
+    visibility: hidden;
+    color: transparent;
+  }
+  
+  input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+    color: transparent;
+  }
+  
+  
+  /*-----apply with social media area------*/
+  
+  .socialMediaContainer {
+    width: 100%;
+    background-color: var(--light-bg-color);
+    height: 78px;
+    border-radius: 10px;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .socialMediaContainer button {
+    border-radius: 100px;
+    border: none;
+  
+    display: block;
+    color: white;
+  
+    font-size: 15px;
+    font-weight: 600;
+  
+    padding: 24px;
+    height: 25px;
+  
+    cursor: pointer;
+    font-family: var(--main-font-style);
+  }
+  
+  .socialMediaContainer button:hover {
+    opacity: 90%;
+  }
+  
+  .buttonContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+    gap: 10px;
+  }
+  
+  .buttonContentContainer svg {
+    height: 18px;
+  }
+  
+  .socialMediaContainer button:first-child {
+    background-color: #3b5998;
+    margin-left: 60px;
+  }
+  
+  .socialMediaContainer button:nth-child(2) {
+    background-color: #0077b5;
+    margin-right: 60px;
+  }
+  
+  /*---------checkbox privacy policy------------*/
+  
+  .checkboxContainer {
+    display: flex;
+    align-items: start;
+  
+    padding: 24px;
+    margin-right: 70px;
+    margin-top: 28px;
+  }
+  
+  .checkboxContainer label {
+    font-size: 14px;
+    font-family: var(--secondary-font-style);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  
+    padding-left: 12px;
+    padding-top: 0;
+  }
+  
+  .checkboxContainer label a {
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  
+  input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+  
+    min-width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+  
+    background-color: var(--light-bg-color);
+    cursor: pointer;
+    transform: none;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 6px;
+  }
+  
+  
+  input[type='checkbox']:checked::after {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f14a";
+  }
+  
+  input[type='checkbox']:focus {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2.5px, rgb(51, 51, 51) 0px 0px 0px 2.5px;
+  }
+  
+  input[type='submit'] {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 6px, rgb(51, 51, 51) 0px 0px 0px 6px;
+    width: 308px;
+    border-radius: 18px;
+    font-size: 14px;
+  
+    height: 57px;
+  
+  }

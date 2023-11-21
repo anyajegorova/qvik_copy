@@ -1,0 +1,87 @@
+.landingPage {
+    background-color: var(--landing-bg-color);
+    height: 95dvh;
+    width: 100vw;
+    font-family: var(--secondary-font-style);
+  
+    color: white;
+  }
+  
+  .mainInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    height: 83dvh;
+  
+  }
+  
+  .mainInfo h1 {
+    font-size: 72px;
+    font-weight: 900;
+  
+    margin: 30px 0px 40px;
+  }
+  
+  .mainInfo h4 {
+    font-weight: 400;
+  }
+  
+  .infoContainer {
+    font-size: 21px;
+  
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    letter-spacing: 1px;
+  
+  }
+  
+  .infoContainer h6 {
+    text-transform: uppercase;
+  }
+  
+  .infoContainer svg {
+    height: 24px;
+  }
+  
+  .mainInfo button {
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+  
+    display: block;
+    height: 48px;
+    width: 200px;
+  
+    cursor: pointer;
+  }
+  
+  .mainInfo button:hover {
+    background-color: rgb(15, 15, 15);
+  }
+  
+  .chevronContainer {
+    height: 10dvh;
+  }
+  
+  .chevronContainer svg {
+    height: 48px;
+  }
+  
+  @media screen and (max-width: 768px) {}
+  
+  @media screen and (max-width: 576px) {}
+  
+  @media screen and (max-width: 320px) {
+    .mainInfo h1 {
+      font-size: 42px;
+      font-weight: 900;
+  
+      margin: 30px 0px 40px; 
+    }
+  }
