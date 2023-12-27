@@ -1,6 +1,7 @@
 .contactForm {
     background-color: rgb(15, 15, 15);
-    height: 1600px;
+    min-height: 1600px;
+    padding: 10px;
   
     color: white;
   

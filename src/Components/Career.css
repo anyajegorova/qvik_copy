@@ -1,152 +1,190 @@
 .career {
-    background-color: var(--light-bg-color);
-    font-family: var(--main-font-style);
-    height: 850px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--light-bg-color);
+  font-family: var(--main-font-style);
+
+  min-height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 54px;
+}
+
+.careerSite {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  max-width: 1200px;
+
+  padding-bottom: 75px;
   
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 54px;
+}
+
+.careerSite a {
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.careerSite h3 {
+  font-size: 24px;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 15px;
+  padding-bottom: 75px;
+  border-top: 1px solid rgba(114, 114, 114, 0.329);
+  width: 100%;
+  max-width: 1200px;
+}
+
+.login a {
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.recruitConnectContainer {
+  background-color: rgba(0, 0, 0, 0.945);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 85px;
+  position: relative;
+}
+
+.recruitConnect {
+  height: 100%; 
+  
+  margin-bottom: 60px;
+}
+
+.recruitConnect h1 {
+  color: white;
+  font-size: 38px;
+  letter-spacing: -2px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.recruitConnect h3 {
+  color: rgb(194, 194, 194);
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: -1.6px;
+  margin-top: 0;
+}
+
+/*--Email Input--*/
+
+.recruitConnectContainer select {
+  width: 480px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.171);
+  border: none;
+  border-radius: 8px;
+
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  padding-left: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.recruitConnectContainer select:focus {
+  background-color: white;
+  color: var(--main-bg-color);
+}
+
+select option {
+  color: black;
+  font-weight: 300;
+}
+
+select option:hover {
+  background-color: var(--main-bg-color);
+  color: white;
+}
+
+/*--Team Images--*/
+
+.recruitConnectContainer ul li {
+  list-style-type: none;
+}
+
+.recruitConnectContainer img {
+  border-radius: 50px;
+  border: 3px solid white;
+  
+  height: 64px;
+  margin: 18px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.recruitConnectContainer ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  bottom: -70px;
+}
+
+/*--Media Queries--*/
+
+@media screen and (max-width: 648px) {
+  .career {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  
-  .careerSite {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 100%;
-  
-    padding-bottom: 75px;
-  }
-  
-  .careerSite a {
-    font-weight: 400;
-    line-height: 40px;
-  }
-  
-  .careerSite h3 {
-    font-size: 24px;
-  }
-  
+
   .login {
-    display: flex;
-    justify-content: space-between;
-  
-    padding-top: 15px;
-    padding-bottom: 75px;
-    border-top: 1px solid rgba(114, 114, 114, 0.329);
-    width: 100%;
+    flex-direction: column;
   }
-  
-  .login a {
-    font-weight: 400;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .recruitConnectContainer {
-    background-color: rgba(0, 0, 0, 0.973);
-    width: 1200px;
-    height: 288px;
-    border-radius: 10px;
-  }
-  
+
+
+
   .recruitConnect h1 {
-    color: white;
-    font-size: 38px;
-    letter-spacing: -2px;
-    margin-bottom: 0;
+    padding-right: 10px;
+    padding-left: 10px;
   }
-  
+
   .recruitConnect h3 {
-    color: rgb(194, 194, 194);
-    font-weight: 500;
     font-size: 24px;
-    letter-spacing: -1.6px;
-    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  
-  
-  .recruitConnect select {
-    width: 490px;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.171);
-    border: none;
-    border-radius: 8px;
-  
-    color: white;
-    font-size: 18px;
-    padding: 20px;
-    padding-left: 30px;
+
+
+  .recruitConnectContainer select {
+    width: 90%;
   }
-  
-  select option {
-    color: black;
-    font-weight: 300;
+
+
+
+  .recruitConnectContainer img {
+    height: 48px;
+    margin: 9px;
   }
-  
-  .recruitConnect ul li {
-    list-style-type: none;
+
+  .recruitConnectContainer ul {
+    bottom: -60px;
   }
-  
-  .recruitConnect img {
-    border-radius: 50px;
-    height: 64px;
-    border: 3px solid white;
-    margin: 18px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  }
-  
-  .recruitConnect ul {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-  }
-  
-  @media screen and (max-width: 576px) {
-    .career {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-    .login {
-      flex-direction: column;
-    }
-  
-  
-    .recruitConnectContainer {
-      width: 100%;
-      height: 350px;
-    }
-  
-    .recruitConnect h1 {
-      padding-right: 30px;
-      padding-left: 30px;
-    }
-  
-    .recruitConnect h3 {
-      font-size: 24px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-  
-    .recruitConnect select {
-      width: 90%;
-    }
-  
-    select option {}
-  
-    .recruitConnect ul li {}
-  
-    .recruitConnect img {}
-  
-    .recruitConnect ul {}
-  
-  
-  }
-  
-  @media screen and (max-width: 320px) {
-    .career {}
-  }
+
+
+}
+
+@media screen and (max-width: 320px) {
+  .career {}
+}
