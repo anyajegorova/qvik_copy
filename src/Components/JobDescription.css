@@ -90,7 +90,7 @@ table tr th {
 
 @media screen and (max-width: 576px) {
   .tableContainer {
-    min-width: 400px;
+    min-width: 370px;
   }
 }
 

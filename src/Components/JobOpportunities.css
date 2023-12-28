@@ -36,12 +36,14 @@
 .application {
     display: flex;
     justify-content: space-between;
-
     font-weight: 500;
     word-spacing: 2px;
     letter-spacing: 0.04px;
 
     padding: 20px;
+}
+.application span {
+    max-width: 100%;
 }
 
 .jobName {
@@ -116,7 +118,7 @@
 
 
 @media screen and (max-width: 648px) {
-    .application{
+    .application {
         flex-direction: column;
         justify-content: center;
         align-items: center;

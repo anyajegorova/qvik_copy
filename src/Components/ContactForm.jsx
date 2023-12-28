@@ -70,7 +70,7 @@ const ContactForm = () => {
 
                         <div className='checkboxContainer'>
                             <input type='checkbox' value='privacyPolicy' />
-                            <label for='privacyPolicy' >By submitting this application, I agree that I have read the <a>Privacy Policy</a> and confirm that QVIK AB store my personal details to be able to process my job
+                            <label htmlFor='privacyPolicy' >By submitting this application, I agree that I have read the <a>Privacy Policy</a> and confirm that QVIK AB store my personal details to be able to process my job
                                 application.</label>
                         </div>
                         <input type='submit' value="Submit application" />

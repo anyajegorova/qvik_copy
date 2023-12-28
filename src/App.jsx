@@ -7,6 +7,7 @@ import JobDescription from './Components/JobDescription';
 import ContactForm from './Components/ContactForm';
 import Career from './Components/Career';
 import Footer from './Components/Footer'
+import ApplyButton from './Components/ApplyButton';
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
     <>
       <Header />
       <LandingPage scroll={scroll} />
-      <JobDescription myRef={myRef} />
+      <JobDescription sectionRef={myRef} />
+      <ApplyButton buttonRef={myRef}/>
       <ContactForm />
       <Career />
       <Footer />

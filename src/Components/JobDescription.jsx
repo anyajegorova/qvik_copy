@@ -1,10 +1,11 @@
+import { useRef } from 'react';
 import './JobDescription.css';
 import JobOpportunities from './JobOpportunities';
 
-const JobDescription = ({ myRef }) => {
+const JobDescription = ({ sectionRef }) => {
     return (
         <>
-            <section className='jobDescribtion' ref={myRef}>
+            <section className='jobDescribtion' ref={sectionRef}>
 
 
                 <div className='mainDescription'>
